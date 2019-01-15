@@ -87,3 +87,23 @@ window.addEventListener("keydown", function (event) {
   // Cancel the default action to avoid it being handled twice
   event.preventDefault();
 }, true);
+
+
+// Collect value of Numbers 0-9 and push in memory array
+// output.value joined, because live output
+function collectMemory (value){
+  if(numCount === 0) {
+    memoryIndex++;
+    memory[memoryIndex] = [];
+  }
+  memory[memoryIndex].push(value);
+  if(memory[memoryIndex][0] === 0 && memory[memoryIndex].length > 1 && memory[memoryIndex][1] != "."){            //if user enters an number after zero,only that number is displayed
+    console.log("01");
+    output.value = memory[memoryIndex][1];
+  } else {
+    output.value = memory[memoryIndex].join("");                            //display all numbers
+  }
+  console.log("memory number", memory);
+  operatorCount = 1;
+  numCount = 1;
+}
