@@ -119,3 +119,24 @@ function collectMemoryDot (value){
     dotCount++;
   }
 }
+
+// Check for operator input
+// operatorCount === 0 prevents double input
+function operator (value){
+  if(operatorCount === 1){
+    if(memory[memoryIndex].length !== undefined){
+      memory[memoryIndex] = parseFloat(memory[memoryIndex].join(""));
+      console.log("memory operator if", memory);
+    }
+    memoryIndex++;
+    console.log(memoryIndex);
+    memory[memoryIndex] = [];                  //empties memory array to be able to add a new number
+    memory[memoryIndex].push(value);
+    output.value = memory[memoryIndex].join("");
+    console.log("memory operator", memory);
+    numCount = 0;
+    dotCount = 0;
+    operatorCount = 0;
+    outputOperations.value = memory.join("");
+  }
+}
