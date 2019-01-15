@@ -107,3 +107,15 @@ function collectMemory (value){
   operatorCount = 1;
   numCount = 1;
 }
+
+
+// Check for FLOAT numbers / DOT
+// Increase dotCount, only one Dot per number possible
+function collectMemoryDot (value){
+  if(dotCount === 0){
+    memory[memoryIndex].push(value);
+    output.value = memory[memoryIndex].join("");
+    console.log("memory dot", memory);
+    dotCount++;
+  }
+}
