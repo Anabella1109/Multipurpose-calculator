@@ -141,6 +141,7 @@ function operator (value){
   }
 }
 
+
 function calculate (){
   if(/[0-9]/.test(memory[memoryIndex][0]) && memoryIndex > 0){
     if(memory[memoryIndex].length > 1){
@@ -160,3 +161,6 @@ function calculate (){
   }
 
 }
+
+
+
