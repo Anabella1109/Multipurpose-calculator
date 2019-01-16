@@ -164,3 +164,13 @@ function calculate (){
 
 
 
+// Empty numArray and operator array, to start new
+function ac(){
+  memory = [[]];
+  result = [];
+  memoryIndex = 0;
+  operatorCount = 0;
+  output.value = 0;
+  console.log("memory AC", memory, result);
+  outputOperations.value = memory.join("");
+}
