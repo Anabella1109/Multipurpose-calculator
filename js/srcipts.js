@@ -149,7 +149,7 @@ function calculate (){
     } else {
       memory[memoryIndex] = parseFloat(memory[memoryIndex]);
     }
-    result = eval(memory.join(""));              //evaluates expression enterd by the user
+    result = eval(memory.join(""));              //evaluates expression entered by the user
     result = Math.round(result*100)/100;             //makes sure result doesn't exceed 2 floating points
     output.value = result;
     console.log("memory result Calculate", memory, result);
