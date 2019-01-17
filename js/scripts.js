@@ -3,16 +3,12 @@ $(document).ready(function(event) {
     $("button#calculator").hide();
     $("a#converter").hide();
     $(".calculator").show();
-    // $("body").addClass(".calc");
-    // $("html").addClass(".calc");
   })
 
   $("a#converter").click(function(){
    $("button#calculator").hide();
    $("a#converter").hide();
    $(".converter").show();
-  //  $("body").addClass(".conv");
-  //  $("html").addClass(".conv");
   })
   event.preventDefault();
 });
