@@ -8,6 +8,8 @@
     output = document.getElementById("output"),                //variable to display number entered before operator
     decimalTracker=0;
    outputOperations = document.getElementById("outputOperations");     //variable to display number entered after operator
+
+   
    function getExpressionDot (value){
   if(decimalTracker === 0){
     expressioN[index].push(value);                    //section to check for decimal numbers
