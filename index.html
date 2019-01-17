@@ -7,11 +7,13 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
   <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <link rel="stylesheet" href="css/styles.css">
    
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +21,7 @@
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right" >
                 <li id="home"><a href="index.html">HOME</a></li>
-                <li class="nav-item" id="about"><a>ABOUT</a></li>
+                <li class="nav-item" id="about"><a data-toggle="modal" href="#about1">ABOUT</a></li>
                 <li class="nav-item" id="help"><a><i class="fa fa-question-circle">Help</i></a></li>
             </ul>
         </div>
@@ -34,7 +36,37 @@
                 </div>
             </div>
         </div>
-  <div class="wrapper">
+        <div id="about1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+          <h1>Multi-purpose calculator</h1>
+      </div>
+      <div class="modal-body">
+          <p>We called this a multi-purpose calculator because it does calculate simple numbers but also convert weight in stones, ounces, grams, kilograms and pounds. This website can be viewed any where and we assure total acculacy of our product.</p>
+          <div id="convertor1">
+            <h2>Weight Convertor</h2>
+            <p>This weight convertor is a tool used to convert between weight unit such as kilograms, grams, pounds, stones and ounces. Use this weight conversion tool to convert between kilograms, stone, pounds, ounces, grams and other units of weight. </p>
+          </div>
+          <div id="calculator1">
+            <h2>Arithmetic Calculator</h2>
+            <p>
+              <p>A calculator is a machine which allows people to do math operations more easily. For example, most calculators will add, subtract, multiply, and divide. Some also do square roots, and more complex calculators can help with calculus and draw function graphs. ... There are different ways to write mathematics on a calculator.</p>
+              This is a simple calculator that has functions like divide, add, multiply and substract. We called it a simple calculator because it performs the simplest task of a calculator.
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+        </div>
+
+  <div class="styler">
     <div class="calculator">
       <input type="text" id="output" readonly value="0" align="right">
       <br />

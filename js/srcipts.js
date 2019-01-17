@@ -97,6 +97,9 @@ $(document).ready(function() {
      $("body").addClass(".calc");
      $("html").addClass(".calc");
    })
+   $("a#about").click(function(){
+     ("#about1").modal();
+   })
 
  
 });
