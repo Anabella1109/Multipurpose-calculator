@@ -195,4 +195,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     margin-top:30px;
 
  }
+
+ #about1,.help{
+   width: 75%;
+   height: 700px;
+   margin-left:20%;
+
+ }
 }
