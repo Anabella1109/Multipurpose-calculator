@@ -4,113 +4,106 @@
     <meta charset="utf-8">
     <title>Weight Convertor</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script  src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </head>
-  
   <body>
-      <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
-              <ul class="nav navbar-nav navbar-right" >
-                  <li id="home"><a href="index.html">HOME</a></li>
-                <li class="nav-item" id="about"><a href="index3.html">ABOUT</a></li>
-                  <li class="nav-item" id="help"><a><i class="fa fa-question-circle">Help</i></a></li>
-              </ul>
-          </div>
-      </nav>
-      
-          </div>
-         
-              <div class="calculator">
-                <input type="text" id="output" readonly value="0" align="right"></input>
-                <br />
-                <input id="outputOperations" class="output"></input>
-                <br />
-                <button class="operatorRow operatorFull" id="buttonAC" onclick="ac()">AC</button>
-                <button class="operator" id="bnDivide" value="/" onclick="operator(value)">/</button>
-                <br />
-                <button class="number" id="button7" onclick="getExpression(7)">7</button>
-                <button class="number" id="button8" onclick="getExpression(8)">8</button>
-                <button class="number" id="button9" onclick="getExpression(9)">9</button>
-                <button class="operator" id="bnMultiply" value="*" onclick="operator(value)">*</button>
-                <br />
-                <button class="number" id="button4" onclick="getExpression(4)">4</button>
-                <button class="number" id="button5" onclick="getExpression(5)">5</button>
-                <button class="number" id="button6" onclick="getExpression(6)">6</button>
-                <button class="operator" id="buttonSubstract" value="-" onclick="operator(value)">-</button>
-                <br />
-                <button class="number" id="button1" onclick="getExpression(1)">1</button>
-                <button class="number" id="button2" onclick="getExpression(2)">2</button>
-                <button class="number" id="button3" onclick="getExpression(3)">3</button>
-                <button class="operator" id="buttonAdd" value="+" onclick="operator(value)">+</button>
-                <br />
-                <button class="number operatorFull" id="button0" onclick="getExpression(0)">0</button>
-                <button class="number" id="buttonDot" value="." onclick="getExpressionDot(value)">.</button>
-                <button class="operator" id="buttonEqual" onclick="calculate()">=</button>
-                <br />
-              </div>
-            
-      <div class="container converter">
-          <div >
-              <p id="head">Type a value in any of the fields to convert between weight measurements:</p>
-              <div>
-                <label>Pounds</label><br>
-                <input id="inputPounds" type="number" placeholder="Enter pounds here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
-              </div>
-              <div>
-                <label>Kilograms</label><br>
-                <input id="inputtedKilograms" type="number" placeholder="Enter kilograms here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
-              </div>
-              <div>
-                  <label>Grams</label><br>
-                  <input id="inputtedGrams" type="number" placeholder="Enter grams here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
-                </div>
-              <div>
-                <label>Ounces</label><br>
-                <input id="inputtedOunces" type="number" placeholder="Enter ounces here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
-              </div>
-              <div>
-                <label>Stones</label><br>
-                <input id="inputtedStones" type="number" placeholder="Enter stones here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
-              </div>
-            </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right" >
+          <li id="home"><a href="index.html">HOME</a></li>
+          <li class="nav-item" id="about"><a href="index3.html">ABOUT</a></li>
+          <li class="nav-item" id="help"><a><i class="fa fa-question-circle">Help</i></a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    <div class="calculator">
+      <input type="text" id="output" readonly value="0" align="right"></input>
+      <br />
+      <input id="outputOperations" class="output"></input>
+      <br />
+      <button class="operatorRow operatorFull" id="buttonAC" onclick="ac()">AC</button>
+      <button class="operator" id="bnDivide" value="/" onclick="operator(value)">/</button>
+      <br />
+      <button class="number" id="button7" onclick="getExpression(7)">7</button>
+      <button class="number" id="button8" onclick="getExpression(8)">8</button>
+      <button class="number" id="button9" onclick="getExpression(9)">9</button>
+      <button class="operator" id="bnMultiply" value="*" onclick="operator(value)">*</button>
+      <br />
+      <button class="number" id="button4" onclick="getExpression(4)">4</button>
+      <button class="number" id="button5" onclick="getExpression(5)">5</button>
+      <button class="number" id="button6" onclick="getExpression(6)">6</button>
+      <button class="operator" id="buttonSubstract" value="-" onclick="operator(value)">-</button>
+      <br />
+      <button class="number" id="button1" onclick="getExpression(1)">1</button>
+      <button class="number" id="button2" onclick="getExpression(2)">2</button>
+      <button class="number" id="button3" onclick="getExpression(3)">3</button>
+      <button class="operator" id="buttonAdd" value="+" onclick="operator(value)">+</button>
+      <br />
+      <button class="number operatorFull" id="button0" onclick="getExpression(0)">0</button>
+      <button class="number" id="buttonDot" value="." onclick="getExpressionDot(value)">.</button>
+      <button class="operator" id="buttonEqual" onclick="calculate()">=</button>
+      <br />
+    </div>
+    <div class="container converter">
+      <div >
+        <p id="head">Type a value in any of the fields to convert between weight measurements:</p>
+        <div>
+          <label>Pounds</label><br>
+          <input id="inputPounds" type="number" placeholder="Enter pounds here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
+        </div>
+        <div>
+          <label>Kilograms</label><br>
+          <input id="inputtedKilograms" type="number" placeholder="Enter kilograms here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
+        </div>
+        <div>
+          <label>Grams</label><br>
+          <input id="inputtedGrams" type="number" placeholder="Enter grams here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
+        </div>
+        <div>
+          <label>Ounces</label><br>
+          <input id="inputtedOunces" type="number" placeholder="Enter ounces here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
+        </div>
+        <div>
+          <label>Stones</label><br>
+          <input id="inputtedStones" type="number" placeholder="Enter stones here" oninput="converter(this.id,this.value)" onchange="converter(this.id,this.value)">
+        </div>
+      </div>
     </div>
     <footer class="footer">
-        <div class="footer-content">
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="https://github.com/Anabella1109?tab=repositories" target="_blank">
-                <i class="fa fa-github fa-2x"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/anabella_ty" target="_blank">
-                <i class="fa fa-twitter fa-2x"></i>
-              </a>
-            </li>
-              <li class="list-inline-item">
-                  <a href="https://www.facebook.com/hategekimana.nicole" target="_blank">
-                    <i class="fa fa-facebook-f fa-2x"></i>
-                  </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://instagram.com/" target="_blank">
-                  <i class="fa fa-instagram fa-2x"></i>
-                </a>
-            </li>
-          
+      <div class="footer-content">
+        <ul class="list-inline">
           <li class="list-inline-item">
-              <a href="https://slack.com/anabella_ty" target="_blank">
-                <i class="fa fa-slack fa-2x"></i>
-              </a>
+            <a href="https://github.com/Anabella1109?tab=repositories" target="_blank">
+            <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/anabella_ty" target="_blank">
+            <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/hategekimana.nicole" target="_blank">
+            <i class="fa fa-facebook-f fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://instagram.com/" target="_blank">
+            <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://slack.com/anabella_ty" target="_blank">
+            <i class="fa fa-slack fa-2x"></i>
+            </a>
           </li>
         </ul>
-          <h5>Copyright &copy; CALCULATOR 2019.</h5>
-        </div>
-      </footer>
-  
-   
+        <h5>Copyright &copy; CALCULATOR 2019.</h5>
+      </div>
+    </footer>
   </body>
 </html>
