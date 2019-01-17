@@ -12,8 +12,6 @@
   <!-- <link href="css/font-awesome.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
   <link rel="stylesheet" href="css/styles.css">
-   
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -21,49 +19,20 @@
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right" >
                 <li id="home"><a href="index.html">HOME</a></li>
-                <li class="nav-item" id="about"><a data-toggle="modal" href="#about1">ABOUT</a></li>
-                <li class="nav-item" id="help"><a><i class="fa fa-question-circle">Help</i></a></li>
+                <li class="nav-item" id="about"><a href="index3.html">ABOUT</a></li>
+                <li class="nav-item" id="help"><a href="index4.html"><i class="fa fa-question-circle">Help</i></a></li>
             </ul>
         </div>
     </nav>
     <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <button id="calculator"  class="btn btn-lg">ARITHMETIC CALCULATOR</button>
+                    <button id="calculator"  class="btn btn-lg">SIMPLE CALCULATOR</button>
                 </div>
                 <div class="col-md-6">
                     <a href="index2.html" class="btn btn-success btn-lg" id="converter">WEIGHT CONVERTER</a>
                 </div>
             </div>
-        </div>
-        <div id="about1" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-          <h1>Multi-purpose calculator</h1>
-      </div>
-      <div class="modal-body">
-          <p>We called this a multi-purpose calculator because it does calculate simple numbers but also convert weight in stones, ounces, grams, kilograms and pounds. This website can be viewed any where and we assure total acculacy of our product.</p>
-          <div id="convertor1">
-            <h2>Weight Convertor</h2>
-            <p>This weight convertor is a tool used to convert between weight unit such as kilograms, grams, pounds, stones and ounces. Use this weight conversion tool to convert between kilograms, stone, pounds, ounces, grams and other units of weight. </p>
-          </div>
-          <div id="calculator1">
-            <h2>Arithmetic Calculator</h2>
-            <p>
-              <p>A calculator is a machine which allows people to do math operations more easily. For example, most calculators will add, subtract, multiply, and divide. Some also do square roots, and more complex calculators can help with calculus and draw function graphs. ... There are different ways to write mathematics on a calculator.</p>
-              This is a simple calculator that has functions like divide, add, multiply and substract. We called it a simple calculator because it performs the simplest task of a calculator.
-            </p>
-          </div>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
-          </div>
-      </div>
-      </div>
         </div>
 
   <div class="styler">
@@ -72,28 +41,28 @@
       <br />
       <input id="outputOperations" class="output">
       <br />
-      <button class="operatorRow operatorFull" id="bnAC" onclick="ac()">AC</button>
+      <button class="operatorRow operatorFull" id="buttonAC" onclick="ac()">AC</button>
       <!-- <button class="operatorRow  " id="bnCE" onclick="ce()">CE</button> -->
       <button class="operator" id="bnDivide" value="/" onclick="operator(value)">/</button>
       <br />
-      <button class="number" id="bn7" onclick="getExpression(7)">7</button>
-      <button class="number" id="bn8" onclick="getExpression(8)">8</button>
-      <button class="number" id="bn9" onclick="getExpression(9)">9</button>
+      <button class="number" id="button7" onclick="getExpression(7)">7</button>
+      <button class="number" id="button8" onclick="getExpression(8)">8</button>
+      <button class="number" id="button9" onclick="getExpression(9)">9</button>
       <button class="operator" id="bnMultiply" value="*" onclick="operator(value)">*</button>
       <br />
-      <button class="number" id="bn4" onclick="getExpression(4)">4</button>
-      <button class="number" id="bn5" onclick="getExpression(5)">5</button>
-      <button class="number" id="bn6" onclick="getExpression(6)">6</button>
-      <button class="operator" id="bnMinus" value="-" onclick="operator(value)">-</button>
+      <button class="number" id="button4" onclick="getExpression(4)">4</button>
+      <button class="number" id="button5" onclick="getExpression(5)">5</button>
+      <button class="number" id="button6" onclick="getExpression(6)">6</button>
+      <button class="operator" id="buttonSubstract" value="-" onclick="operator(value)">-</button>
       <br />
-      <button class="number" id="bn1" onclick="getExpression(1)">1</button>
-      <button class="number" id="bn2" onclick="getExpression(2)">2</button>
-      <button class="number" id="bn3" onclick="getExpression(3)">3</button>
-      <button class="operator" id="bnPlus" value="+" onclick="operator(value)">+</button>
+      <button class="number" id="button1" onclick="getExpression(1)">1</button>
+      <button class="number" id="button2" onclick="getExpression(2)">2</button>
+      <button class="number" id="button3" onclick="getExpression(3)">3</button>
+      <button class="operator" id="buttonAdd" value="+" onclick="operator(value)">+</button>
       <br />
-      <button class="number operatorFull" id="bn0"onclick="getExpression(0)">0</button>
-      <button class="number" id="bnDot" value="." onclick="getExpressionDot(value)">.</button>
-      <button class="operator" id="bnEqual" onclick="calculate()">=</button>
+      <button class="number operatorFull" id="button0"onclick="getExpression(0)">0</button>
+      <button class="number" id="buttonDot" value="." onclick="getExpressionDot(value)">.</button>
+      <button class="operator" id="buttonEqual" onclick="calculate()">=</button>
       <br />
     </div>
   </div>
