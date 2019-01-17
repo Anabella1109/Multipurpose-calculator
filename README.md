@@ -4,14 +4,16 @@
 
 ## Description
 Calculator runs on PCs, tablets and smartphones. Online calculator supports both simple arithmetic operations and can convert kilograms,grams,Ounces,Pounds and stones.
-in calculator you have to entering one number where you can choose to enter(+)for addition, (-)for soubstration, (*) for multiplication, (/)for division, (AC) to delete and (.) for decimal and (=)for the answer and put the second number.as long as you click on one of the above operation the first number move on the second line
+in calculator you have to entering one number where you can choose to enter(+)for addition, (-)for soubstration, (*) for multiplication, (/)for division, (AC) to delete and (.) for decimal and (=)for the answer and put the second number as long as you click on one of the above operation the first number move on the second line
  when you choose convert calculator whatever number you entered on one of the above measuers it convert to all above measures.
- ###Setup/Installation Requiremet
+
+ ### Setup/Installation Requirement
+
 * Open your computer or smart phone
 * Connect to internet
 * search for my link:anabella1109.github.io/Multipurpose-calculator
-* now you reach on my website
-#BDD(Behavior-Driven Development)
+* You've reached the website.ENJOY
+# BDD(Behavior-Driven Development)
 ## Specifications
 ##  Entering commands from the keyboard or just click on button
 For the work of the simple calculator You can use both ordinary numeric buttons above the keyboard and separate numeric buttons on the right.
