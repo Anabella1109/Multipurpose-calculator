@@ -18,59 +18,75 @@ in calculator you have to entering one number where you can choose to enter(+)fo
 ##  Entering commands from the keyboard or just click on button
 For the work of the simple calculator You can use both ordinary numeric buttons above the keyboard and separate numeric buttons on the right.
 
-You can use the [Enter] key or click on [=] to enter the equal character.
-To enter a plus sign, use the [ + ] key at the top or on the side numeric keypad.
-To enter a minus sign, use the [ - ] key at the top or on the side numeric keypad.
-Use the [ * ] key on the side numeric keypad to enter the multiplication sign.
-Use the [ / ] key on the side numeric keypad to enter the division sign.
-You can use the [Esc] and [Del] keys on top of the keyboard or click on [AC] , or the [End] key on the side numeric keypad to reset the calculator.
-##Example on arithmetic Calculator
-input: click on 4,
-output:it display 4 on the screen of the calculator
-input: click on +
+1. You can use the [Enter] key or click on [=] to enter the equal character.<br>
+2. To enter a plus sign, use the [ + ] key at the top or on the side numeric keypad.
+3. To enter a minus sign, use the [ - ] key at the top or on the side numeric keypad.
+4. Use the [ * ] key on the side numeric keypad to enter the multiplication sign.
+5. Use the [ / ] key on the side numeric keypad to enter the division sign.
+6. You can use the [Esc] and [Del] keys on top of the keyboard or click on [AC] , or the [End] key on the side numeric keypad to reset the calculator.
+
+## Example on arithmetic Calculator
+input: click on 4,<br>
+output:it display 4 on the screen of the calculator<br>
+
+input: click on +<br>
 output:the first number which is 3 move to the second line
-input:click on 3
+
+input:click on 3<br>
 output:display 3 on the screen of the calculator
-input:click on =
+
+input:click on =<br>
 output:it show the answer which is 7
 
-input: click on 4,
+input: click on 4,<br>
 output:it display 4 on the screen of the calculator
-input: click on *
+
+input: click on *<br>
 output:the first number which is 3 move to the second line
-input:click on 3
+
+input:click on 3<br>
 output:display 3 on the screen of the calculator
-input:click on =
+
+input:click on =<br>
 output:it show the answer which is 12
 
-input: click on 4,
+input: click on 4,<br>
 output:it display 4 on the screen of the calculator
-input: click on -
+
+input: click on -<br>
 output:the first number which is 3 move to the second line
-input:click on 3
+
+input:click on 3<br>
 output:display 3 on the screen of the calculator
+
 input:click on =
 output:it show the answer which is 1
 
-input: click on 4,
+input: click on 4,<br>
 output:it display 4 on the screen of the calculator
-input: click on /
+
+input: click on /<br>
 output:the first number which is 3 move to the second line
-input:click on 3
+
+input:click on 3<br>
 output:display 3 on the screen of the calculator
-input:click on =
+
+input:click on =<br>
 output:it show the answer which is 1.33
 
-input: click on 4.5,
+input: click on 4.5,<br>
 output:it display 4.5 on the screen of the calculator
-input: click on +
+
+input: click on +<br>
 output:the first number which is 3 move to the second line
-input:click on 3.5
+
+input:click on 3.5<br>
 output:display 3 on the screen of the calculator
-input:click on =
+
+input:click on =<br>
 output:it show the answer which is 8
 
-input: click on AC
+input: click on AC<br>
 output:delete all numbers
 
 ##  Example on convert Calculator
