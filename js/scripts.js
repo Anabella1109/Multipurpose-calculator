@@ -17,7 +17,7 @@ $(document).ready(function(event) {
   event.preventDefault();
 });
 
-function weightConverter(source,valNum) {
+function converter(source,valNum) {
   valNum = parseFloat(valNum);
   
   if (source=="inputPounds") {
