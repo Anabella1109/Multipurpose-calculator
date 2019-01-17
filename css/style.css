@@ -1,0 +1,134 @@
+body {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    position: relative;
+    color:rgb(255, 255, 255);
+}
+.navbar.navbar-inverse {
+    /* background: url("images.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:12%;
+    }
+#home{
+    /* border:1px solid greenyellow; */
+    border-radius:5px;
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:24px;
+    margin:10px;
+    margin-top:18px;
+}
+#about{
+    /* border:1px solid red; */
+    border-radius:5px;
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:24px;
+    margin:10px;
+    margin-top:18px;
+}
+#help{
+    /* border:1px solid aqua; */
+    /* border-radius:40%; */
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:18px;
+    margin:10px;
+    margin-top:18px;
+    color:black;
+}
+
+.col-md-6{
+  font-size:100px;
+  padding:30px;
+}
+
+
+.calculator{
+background-color: white;
+border:1px solid rgb(207, 207, 207);
+width:20%;
+height:500px;
+margin-left:40%;
+display: none;
+
+}
+
+.footer-content {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.list-inline a {
+  color: rosybrown;
+  /* margin-left: 10%; */
+
+}
+.footer {
+  position: fixed; 
+  color: white;
+  /* background-color: black; */
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Julius Sans One';
+}
+
+
+#head{font-weight:900;
+  font-size: 30px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+#inputPounds{background-color:#ffe6e6; 
+  padding: 17px;
+  width:60%;
+  margin-bottom: 20px;
+border:3px solid rgb(153, 46, 46);
+border-radius:20px;}
+
+#inputKilograms{background-color:#ffcccc;
+padding: 17px;
+width:60%;
+margin-bottom: 20px;
+border:3px solid rgb(153, 46, 46);
+border-radius:20px;}
+
+
+#inputOunces{background-color:#ff9999;
+   padding: 17px;
+  width:60%;
+  margin-bottom: 20px;
+  border:3px solid rgb(153, 46, 46);
+  border-radius:20px;}
+
+#inputGrams{background-color: #ffb3b3; 
+  padding: 17px;
+  width:60%;
+  margin-bottom: 20px;
+  border:3px solid rgb(153, 46, 46);
+  border-radius:20px;}
+
+#inputStones{background-color:#ff8080 ; 
+  padding: 17px;
+  width:60%;
+  border:3px solid rgb(153, 46, 46);
+border-radius:20px; }
+
+  input[type=number]{color:rgb(70, 14, 58);
+  font-size: 15px;
+font-weight: 900;
+font-family:"courier new";
+}
+label{font-size:15px;
+  font-style:italic;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+

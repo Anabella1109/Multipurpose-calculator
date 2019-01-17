@@ -1,0 +1,142 @@
+/*round image*/
+body,
+html {
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-size: cover;
+    position: relative;
+}
+.navbar.navbar-inverse {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:12%;
+    }
+#home{
+    /* border:1px solid greenyellow; */
+    border-radius:5px;
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:24px;
+    margin:10px;
+    margin-top:18px;
+}
+#about{
+    /* border:1px solid red; */
+    border-radius:5px;
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:24px;
+    margin:10px;
+    margin-top:18px;
+}
+#help{
+    /* border:1px solid aqua; */
+    /* border-radius:40%; */
+    background-color:rgb(59, 4, 4);
+    padding-top:5px;
+    font-size:18px;
+    margin:10px;
+    margin-top:18px;
+    color:black;
+}
+
+#calculator,#converter{
+  margin-top: 40%;
+  margin-left: 30%;
+  height: 100px;
+
+}
+#converter{
+  padding-top:8%;
+}
+.col-md-6{
+    font-size:100px;
+    padding:30px;
+}
+
+
+.calculator{
+  background-color: white;
+  border:2px solid rgb(0, 0, 0);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  width:25%;
+  height:500px;
+  margin-left:40%;
+  display: none;
+
+}
+.converter{
+  display: none;
+}
+#output,#outputOperations{
+   height:12%; 
+  margin-bottom: 0.5%; 
+  width: 99.5%;
+  text-align: right;
+  /* float:right; */
+}
+.number{
+  height:15%;
+  width:22.5%;
+}
+.operator{
+  height:15%;
+  width:30%;
+  background-color: rgb(177, 59, 59);
+  float: right;
+  font-weight: 700;
+}
+
+#bn0{
+  width:45%;
+}
+#bnAC{
+  width:70%;
+  height: 15%;
+  background-color: grey;
+}
+.output {
+  font-size: 2rem;
+  font-style: italic;
+  /* height: 25px; */
+}
+#outputOperation{
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#bnDot{
+  width:23%;
+}
+.footer-content {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.list-inline a {
+  color: rosybrown;
+  /* margin-left: 10%; */
+
+}
+.footer {
+  position: fixed; 
+  color: white;
+  /* background-color: black; */
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Julius Sans One';
+}
+
+.calc{
+  background-image: none;
+  background-color:rosybrown;
+
+}
+
+
