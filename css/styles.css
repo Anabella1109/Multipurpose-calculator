@@ -11,33 +11,24 @@ html {
     background-size: 100% 100%;
     height:12%;
     }
-#home{
+#home,#help,#about{
     /* border:1px solid greenyellow; */
     border-radius:5px;
     background-color:rgb(59, 4, 4);
     padding-top:5px;
     font-size:24px;
-    margin:10px;
+    margin:30px;
     margin-top:18px;
+    margin-bottom:10px;
+
 }
-#about{
-    /* border:1px solid red; */
-    border-radius:5px;
-    background-color:rgb(59, 4, 4);
-    padding-top:5px;
-    font-size:24px;
-    margin:10px;
-    margin-top:18px;
-}
+
+}    
 #help{
-    /* border:1px solid aqua; */
-    /* border-radius:40%; */
-    background-color:rgb(59, 4, 4);
-    padding-top:5px;
-    font-size:18px;
-    margin:10px;
-    margin-top:18px;
+   
     color:black;
+    
+
 }
 
 #calculator,#converter{
@@ -58,7 +49,8 @@ html {
 .calculator{
   background-color: white;
   border:2px solid rgb(0, 0, 0);
-  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px rgb(0, 0, 0);
   width:25%;
   height:500px;
   margin-left:40%;
@@ -70,7 +62,10 @@ html {
 }
 #output,#outputOperations{
    height:12%; 
-  margin-bottom: 0.5%; 
+   border-collapse: collapse;
+  border-radius: 7px;
+
+  /* margin-bottom: 0.5%;  */
   width: 99.5%;
   text-align: right;
   /* float:right; */
@@ -82,7 +77,8 @@ html {
 .operator{
   height:15%;
   width:30%;
-  background-color: rgb(177, 59, 59);
+  background-color: rgb(211, 66, 66);
+  color: white;
   float: right;
   font-weight: 700;
 }
@@ -103,6 +99,7 @@ html {
 #outputOperation{
   font-size: 2rem;
   font-style: italic;
+
 }
 
 #bnDot{
@@ -138,5 +135,82 @@ html {
   background-color:rosybrown;
 
 }
+.list-inline-item{
+  margin-left: 40px;
+}
 
+@media (max-width: 1049px) {
+  #home,#about,#help{
+    padding-top:2px;
+    font-size:15px;
+    width:25%;
+    margin:10px;
+    margin-top:9px;
+    margin-bottom:5px;
 
+  }
+  #calculator{
+    margin-top: 30%;
+    margin-left: 20%;
+    margin-right: 5%;
+    height: 50px;
+  
+  }
+  #converter{
+    margin-top: 10%;
+    margin-left: 20%;
+
+    height: 50px;
+    padding-top: 2%;
+  
+  }
+  .footer {
+    margin-top:30px;
+
+ }
+  
+}
+@media (max-width: 1290px) {
+  .calculator{
+    background-color: white;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgb(0, 0, 0);
+    width:35%;
+    height:300px;
+    margin-left:40%;
+    display: none;
+  
+  }
+  .number{
+    height:13%;
+    width:22.5%;
+  }
+  .operator{
+    height:13%;
+    width:27%;
+    background-color: rgb(211, 66, 66);
+    color: white;
+    float: right;
+    font-weight: 700;
+  }
+  
+  
+
+}
+@media (max-width: 1267px) {
+  .calculator{
+    background-color: white;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgb(0, 0, 0);
+    width:30%;
+    height:300px;
+    margin-left:40%;
+    display: none;
+  
+  }
+  
+  
+
+}

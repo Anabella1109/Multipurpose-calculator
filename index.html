@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" id="navMain">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right" >
                 <li id="home"><a href="index.html">HOME</a></li>
@@ -44,23 +44,23 @@
       <!-- <button class="operatorRow  " id="bnCE" onclick="ce()">CE</button> -->
       <button class="operator" id="bnDivide" value="/" onclick="operator(value)">/</button>
       <br />
-      <button class="number" id="bn7" onclick="collectMemory(7)">7</button>
-      <button class="number" id="bn8" onclick="collectMemory(8)">8</button>
-      <button class="number" id="bn9" onclick="collectMemory(9)">9</button>
+      <button class="number" id="bn7" onclick="getExpression(7)">7</button>
+      <button class="number" id="bn8" onclick="getExpression(8)">8</button>
+      <button class="number" id="bn9" onclick="getExpression(9)">9</button>
       <button class="operator" id="bnMultiply" value="*" onclick="operator(value)">*</button>
       <br />
-      <button class="number" id="bn4" onclick="collectMemory(4)">4</button>
-      <button class="number" id="bn5" onclick="collectMemory(5)">5</button>
-      <button class="number" id="bn6" onclick="collectMemory(6)">6</button>
+      <button class="number" id="bn4" onclick="getExpression(4)">4</button>
+      <button class="number" id="bn5" onclick="getExpression(5)">5</button>
+      <button class="number" id="bn6" onclick="getExpression(6)">6</button>
       <button class="operator" id="bnMinus" value="-" onclick="operator(value)">-</button>
       <br />
-      <button class="number" id="bn1" onclick="collectMemory(1)">1</button>
-      <button class="number" id="bn2" onclick="collectMemory(2)">2</button>
-      <button class="number" id="bn3" onclick="collectMemory(3)">3</button>
+      <button class="number" id="bn1" onclick="getExpression(1)">1</button>
+      <button class="number" id="bn2" onclick="getExpression(2)">2</button>
+      <button class="number" id="bn3" onclick="getExpression(3)">3</button>
       <button class="operator" id="bnPlus" value="+" onclick="operator(value)">+</button>
       <br />
-      <button class="number operatorFull" id="bn0"onclick="collectMemory(0)">0</button>
-      <button class="number" id="bnDot" value="." onclick="getExpressioNDot(value)">.</button>
+      <button class="number operatorFull" id="bn0"onclick="getExpression(0)">0</button>
+      <button class="number" id="bnDot" value="." onclick="getExpressionDot(value)">.</button>
       <button class="operator" id="bnEqual" onclick="calculate()">=</button>
       <br />
     </div>

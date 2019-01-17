@@ -1,21 +1,43 @@
 //business logic
 
-// Define variables
-var expressioN = [[]];        //variable to store input as array so they be turned into string to be compared with expressions
-    result = 0,         //variable to store result
-    index = 0,      //variable to help navigate through array
-    dotCount = 0,     //variable to keep track of number of dots to avoid user using more than one dot
-    operatorCount = 0,      //variable to keep track of operators to avoid user inserting two operators at once
-    numCount = 1,            //variable to keep track of the numbers passed to an operator
-    errorMessage = "Something went wrong.",     
+   var index = 0,      //variable to help navigate through array
+    numberOfOperators = 0,      //variable to keep track of operators to avoid user inserting two operators at once
+    countNumbers = 1,                     //variable to keep track of the numbers passed to an operator    
+    answer = 0,         //variable to store answer
+    expressioN = [[]];        //variable to store input as array so they be turned into string to be compared with expressions
     output = document.getElementById("output"),                //variable to display number entered before operator
-    outputOperations = document.getElementById("outputOperations");     //variable to display number entered after operator
-   
+    decimalTracker=0;
+   outputOperations = document.getElementById("outputOperations");     //variable to display number entered after operator
+   function getExpressionDot (value){
+  if(decimalTracker === 0){
+    expressioN[index].push(value);                    //section to check for decimal numbers
+    output.value = expressioN[index].join("");
+    ;
+    decimalTracker++;
+  }
+}
 
+function operator (value){
+  if(numberOfOperators === 1){                                       //section to check if operator is inputted and prevents operator being inputted twice
+    if(expressioN[index].length !== undefined){
+      expressioN[index] = parseFloat(expressioN[index].join(""));
+      
+    }
+    index++;
+    
+    expressioN[index] = [];                  //empties expressioN array to be able to add a new number
+    expressioN[index].push(value);
+    output.value = expressioN[index].join("");
+    
+    countNumbers = 0;
+    decimalTracker = 0;
+    numberOfOperators = 0;
+    outputOperations.value = expressioN.join("");
+  }
+}
 
- 
-function collectMemory (value){
-  if(numCount === 0) {
+function getExpression (value){
+  if(countNumbers === 0) {
     index++;
     expressioN[index] = [];
   }
@@ -27,38 +49,8 @@ function collectMemory (value){
     output.value = expressioN[index].join("");                            //display all numbers
   }
   
-  operatorCount = 1;
-  numCount = 1;
-}
-
-function getexpressioNDot (value){
-  if(dotCount === 0){
-    expressioN[index].push(value);                    //section to check for decimal numbers
-    output.value = expressioN[index].join("");
-    ;
-    dotCount++;
-  }
-}
-
-
-
-function operator (value){
-  if(operatorCount === 1){                                       //section to check if operator is inputted and prevents operator being inputted twice
-    if(expressioN[index].length !== undefined){
-      expressioN[index] = parseFloat(expressioN[index].join(""));
-      
-    }
-    index++;
-    
-    expressioN[index] = [];                  //empties expressioN array to be able to add a new number
-    expressioN[index].push(value);
-    output.value = expressioN[index].join("");
-    
-    numCount = 0;
-    dotCount = 0;
-    operatorCount = 0;
-    outputOperations.value = expressioN.join("");
-  }
+  numberOfOperators = 1;
+  countNumbers = 1;
 }
 
 
@@ -69,14 +61,14 @@ function calculate (){
     } else {
       expressioN[index] = parseFloat(expressioN[index]);
     }
-    result = eval(expressioN.join(""));              //evaluates expression entered by the user
-    result = Math.round(result*100)/100;             //makes sure result doesn't exceed 2 floating points
-    output.value = result;
+    answer = eval(expressioN.join(""));              //evaluates expression entered by the user
+    answer = Math.round(answer*100)/100;             //makes sure answer doesn't exceed 2 floating points
+    output.value = answer;
     
-    expressioN = [result];               //keeps current result in expressioN
+    expressioN = [answer];               //keeps current answer in expressioN
     index = 0;
     countCE = 0;
-    operatorCount = 1;
+    numberOfOperators = 1;
     outputOperations.value = expressioN.join("");
   }
 
@@ -84,12 +76,11 @@ function calculate (){
 
 
 
-// Empty numArray and operator array, to start new
 function ac(){
   expressioN = [[]];
-  result = [];
-  index = 0;
-  operatorCount = 0;
+  answer = [];
+  index = 0;                        //section to empty array when user click ac
+  numberOfOperators = 0;
   output.value = 0;
   outputOperations.value = expressioN.join("");
 }
@@ -109,41 +100,41 @@ $(document).ready(function() {
 
  
 });
-   //Section for keyboard input
+  
    window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
-      return; // Do nothing if the event was already processed
+      return; 
     }
     switch (event.key) {
       case "0":
-      collectMemory(0);
-      break;
+      getExpression(0);
+      break;                                            
       case "1":
-      collectMemory(1);
+      getExpression(1);
       break;
       case "2":
-      collectMemory(2);
+      getExpression(2);
       break;
       case "3":
-      collectMemory(3);
+      getExpression(3);
       break;
       case "4":
-      collectMemory(4);
+      getExpression(4);
       break;
-      case "5":
-      collectMemory(5);
+      case "5":                                                 //section for key input
+      getExpression(5);
       break;
       case "6":
-      collectMemory(6);
+      getExpression(6);
       break;
       case "7":
-      collectMemory(7);
+      getExpression(7);
       break;
       case "8":
-      collectMemory(8);
+      getExpression(8);
       break;
       case "9":
-      collectMemory(9);
+      getExpression(9);
       break;
       case "+":
       operator("+");
@@ -158,19 +149,16 @@ $(document).ready(function() {
       operator("*");
       break;
       case ".":
-      getexpressioNDot(".");
+      getExpressionDot(".");
       break;
       case ",":
-      getexpressioNDot(".");
+      getExpressionDot(".");
       break;
       case "Enter":
       calculate();
       break;
       case "=":
       calculate();
-      break;
-      case "Backspace":
-      ce();
       break;
       case "Escape":
       ac();
