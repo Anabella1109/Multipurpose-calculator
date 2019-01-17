@@ -67,11 +67,8 @@ html {
    height:12%; 
    border-collapse: collapse;
   border-radius: 7px;
-
-  /* margin-bottom: 0.5%;  */
   width: 99.5%;
   text-align: right;
-  /* float:right; */
 }
 .number{
   height:15%;
@@ -97,7 +94,6 @@ html {
 .output {
   font-size: 2rem;
   font-style: italic;
-  /* height: 25px; */
 }
 #outputOperation{
   font-size: 2rem;
@@ -116,13 +112,11 @@ html {
 
 .list-inline a {
   color: rosybrown;
-  /* margin-left: 10%; */
 
 }
 .footer {
   position: fixed; 
   color: white;
-  /* background-color: black; */
   right: 0;
   left: 0;
   bottom: 0;
