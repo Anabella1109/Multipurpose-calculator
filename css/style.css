@@ -1,89 +1,92 @@
 body {
-    height: 100%;
-    background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-size: cover;
-    position: relative;
-    color:rgb(255, 255, 255);
-}
-.navbar.navbar-inverse {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height:12%;
-    }
-#home{
-    border-radius:5px;
-    background-color:rgb(59, 4, 4);
-    padding-top:5px;
-    font-size:24px;
-    margin:10px;
-    margin-top:18px;
-}
-#about{
-    
-    border-radius:5px;
-    background-color:rgb(59, 4, 4);
-    padding-top:5px;
-    font-size:24px;
-    margin:10px;
-    margin-top:18px;
-}
-#help{
-    background-color:rgb(59, 4, 4);
-    padding-top:5px;
-    font-size:18px;
-    margin:10px;
-    margin-top:18px;
-    color:black;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover;
+  position: relative;
+  color: rgb(255, 255, 255);
 }
 
-.col-md-6{
-  font-size:100px;
-  padding:30px;
+.navbar.navbar-inverse {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 12%;
 }
-#about1,.help{
+
+#home {
+  border-radius: 5px;
+  background-color: rgb(59, 4, 4);
+  padding-top: 5px;
+  font-size: 24px;
+  margin: 10px;
+  margin-top: 18px;
+}
+
+#about {
+  border-radius: 5px;
+  background-color: rgb(59, 4, 4);
+  padding-top: 5px;
+  font-size: 24px;
+  margin: 10px;
+  margin-top: 18px;
+}
+
+#help {
+  background-color: rgb(59, 4, 4);
+  padding-top: 5px;
+  font-size: 18px;
+  margin: 10px;
+  margin-top: 18px;
+  color: black;
+}
+
+.col-md-6 {
+  font-size: 100px;
+  padding: 30px;
+}
+
+#about1,
+.help {
   background-color: white;
   color: black;
   text-align: center;
   width: 40%;
-  height:550px;
-  margin-left:30%;
-  margin-top:10%;
+  height: 550px;
+  margin-left: 30%;
+  margin-top: 10%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
 }
-#about1 h1,#about1 h2{
+
+#about1 h1,
+#about1 h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-top: 50px;
 }
 
-.close{
+.close {
   background-color: rgb(180, 0, 0);
   color: white;
   text-decoration: none;
   height: 20px;
-  width:90px;
+  width: 90px;
   padding: 5px;
   padding-top: 6px;
   font-size: 20px;
-   float: right; 
-   border-radius:7px;
-   margin: 2px;
-
-  
-}
-.help{
-  height:300px;
+  float: right;
+  border-radius: 7px;
+  margin: 2px;
 }
 
-.calculator{
-background-color: white;
-border:1px solid rgb(207, 207, 207);
-width:20%;
-height:500px;
-margin-left:40%;
-display: none;
+.help {
+  height: 300px;
+}
 
+.calculator {
+  background-color: white;
+  border: 1px solid rgb(207, 207, 207);
+  width: 20%;
+  height: 500px;
+  margin-left: 40%;
+  display: none;
 }
 
 .footer-content {
@@ -94,10 +97,10 @@ display: none;
 
 .list-inline a {
   color: rosybrown;
-
 }
+
 .footer {
-  position: fixed; 
+  position: fixed;
   color: white;
   right: 0;
   left: 0;
@@ -109,97 +112,99 @@ display: none;
   font-family: 'Julius Sans One';
 }
 
-
-#head{font-weight:900;
+#head {
+  font-weight: 900;
   font-size: 30px;
-font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-#inputPounds{background-color:#ffe6e6; 
+#inputPounds {
+  background-color: #ffe6e6;
   padding: 17px;
-  width:60%;
+  width: 60%;
   margin-bottom: 20px;
-border:3px solid rgb(153, 46, 46);
-} 
-
-#inputtedKilograms{background-color:#ffcccc;
-padding: 17px;
-width:60%;
-margin-bottom: 20px;
-border:3px solid rgb(153, 46, 46);
-
+  border: 3px solid rgb(153, 46, 46);
 }
 
-
-#inputtedOunces{background-color:#ff9999;
-   padding: 17px;
-  width:60%;
-  margin-bottom: 20px;
-  border:3px solid rgb(153, 46, 46);
-  border-radius:20/px;
-}
-
-#inputtedGrams{background-color: #ffb3b3; 
+#inputtedKilograms {
+  background-color: #ffcccc;
   padding: 17px;
-  width:60%;
+  width: 60%;
   margin-bottom: 20px;
-  border:3px solid rgb(153, 46, 46);
+  border: 3px solid rgb(153, 46, 46);
 }
 
-#inputtedStones{background-color:#ff8080 ; 
+#inputtedOunces {
+  background-color: #ff9999;
   padding: 17px;
-  width:60%;
-  border:3px solid rgb(153, 46, 46);
-
+  width: 60%;
+  margin-bottom: 20px;
+  border: 3px solid rgb(153, 46, 46);
+  border-radius: 20/px;
 }
 
-  input[type=number]{color:rgb(70, 14, 58);
+#inputtedGrams {
+  background-color: #ffb3b3;
+  padding: 17px;
+  width: 60%;
+  margin-bottom: 20px;
+  border: 3px solid rgb(153, 46, 46);
+}
+
+#inputtedStones {
+  background-color: #ff8080;
+  padding: 17px;
+  width: 60%;
+  border: 3px solid rgb(153, 46, 46);
+}
+
+input[type=number] {
+  color: rgb(70, 14, 58);
   font-size: 15px;
-font-weight: 900;
-font-family:"courier new";
+  font-weight: 900;
+  font-family: "courier new";
 }
-label{font-size:15px;
-  font-style:italic;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
 
- .list-inline-item{
+label {
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.list-inline-item {
   margin-left: 40px;
 }
- @media (max-width: 1049px) {
-  #home,#about,#help{
-    padding-top:2px;
-    font-size:15px;
-    width:25%;
-    margin:10px;
-    margin-top:9px;
-    margin-bottom:5px;
 
+@media (max-width: 1049px) {
+  #home,
+  #about,
+  #help {
+    padding-top: 2px;
+    font-size: 15px;
+    width: 25%;
+    margin: 10px;
+    margin-top: 9px;
+    margin-bottom: 5px;
   }
-  #calculator{
+  #calculator {
     margin-top: 30%;
     margin-left: 20%;
     margin-right: 5%;
     height: 50px;
-  
   }
-  #converter{
+  #converter {
     margin-top: 10%;
     margin-left: 20%;
-
     height: 50px;
     padding-top: 2%;
-  
   }
   .footer {
-    margin-top:30px;
-
- }
-
- #about1,.help{
-   width: 75%;
-   height: 700px;
-   margin-left:20%;
-
- }
+    margin-top: 30px;
+  }
+  #about1,
+  .help {
+    width: 75%;
+    height: 700px;
+    margin-left: 20%;
+  }
 }
