@@ -94,15 +94,16 @@ No bugs so far. If found, email me at one of the above sited.
 
 ## Support and contact details
 * For more information please contact on
-* email:-bellaxbx1109@gmail.com 
-        -yvetteumubyeyi2@gmail.com
-        -cyntkayitare@gmail.com
-        -ingabire.sylvie@gmail.com
+* E-mail:<br>
+ -bellaxbx1109@gmail.com <br>
+         -yvetteumubyeyi2@gmail.com<br>
+        -cyntkayitare@gmail.com<br>
+        -ingabire.sylvie@gmail.com<br>
         -nicoleha127@gmail.com
-* Phone:-0785642202 Sylvie I
-        -0734869264 Cynthia K
-        -0781899928 Nicole H
-        -0787695111 Anabella T
+* Phone:<br>-0785642202 Sylvie I<br>
+        -0734869264 Cynthia K<br>
+        -0781899928 Nicole H<br>
+        -0787695111 Anabella T<br>
         -0782237885 Yvette U
 ### License
 Copyright (c) **Anabella Tuyisenge**
